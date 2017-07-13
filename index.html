@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<title>App</title>
+</head>
+<body>
+	<header class="main-header">
+		<h1>AppWeather</h1>
+		<h2>Powered by @MarciSartori <span class="it">&copy;</span></h2>
+	</header>
+
+	<div class="loader">Buscando posicion...</div>
+
+	<form action="" class="search">
+		<input type="text" data-input="cityAdd" class="textoBuscar" placeholder="Agrega una nueva ciudad" name="">
+		<input type="submit" data-button="add" class="add-btn btn" value="+" name="">
+		<input type="submit" data-posiBtn="pos" class="pos-btn btn" value="Ubicación Actual" name="">
+		<button data-verciudad class="textoBuscar btn">Ver Ciudades</button>	
+	</form>
+	<main class="cards">
+		<template id="template-ciudades">
+			<div class="card">
+				<header class="card-header">
+					<h3 data-ciudad class="card-titulo"></h3>
+					<h4 data-tiempo class="card-hora"></h4>
+				</header>
+				<div class="card-info">
+					<img data-icono src="" alt="" class="card-img">
+						
+				</div>
+				<div class="card-info-mas">
+					<span data-temp="act" class="act"></span>
+					<span data-temp="min" class="min"></span>
+					<span data-temp="max" class="max"></span>
+					<span data-temp="hum" class="hum"></span>
+					<span data-hora="hora" class="hora"></span>
+					<span data-nubes="nubes" class="nubes"></span>
+
+				</div>
+			</div>
+		</template>
+	</main>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>

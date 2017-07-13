@@ -1,0 +1,178 @@
+html {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.loader{
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	text-align: center;
+	color: grey;
+}
+
+.it {
+	color: #4caf50;
+}
+
+.main-header {
+	background: radial-gradient(circle, #039BE5, #01579b);
+	text-align: center;
+	padding: 4em;
+	color: white;
+	box-shadow: 2px 2px 5px grey;
+	
+}
+
+form {
+	margin: 0;
+}
+
+h1 {
+	
+	font-weight: normal;
+	margin: 0;
+}
+h2 {
+	font-size: 1em;
+}
+
+/*  MEDIA QUERY */
+
+@media all and (max-width: 480px) {
+	html{
+		font-size: 80%;
+	}
+}
+
+.card {
+	background-color:  #039BE5;
+	padding: 0;
+	width:  96%;
+	box-sizing: border-box;
+	position: relative;
+	color: grey;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	box-shadow: 2px 2px 2px grey;
+	margin: 5px 2% 5px 2%;
+
+
+}
+
+	.card-titulo {
+		
+		color: white;
+		text-shadow: 1px 1px 1px grey;
+		margin: 0;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.card-hora{
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.card-info{
+		position: absolute;
+		bottom: 4em;
+		left: -1em;
+		background: #01579b;
+		border-radius: 50%;
+		
+		margin: 0px 0 5px 5px;
+		height: 60px;
+		width: 60px;
+
+	}
+		
+	.card-info-mas{
+		margin-left: 15px;
+	}
+	.card-img{
+		
+		position: absolute;
+		padding: 0.5em;
+		align-items: center;
+		margin: auto;
+
+	}
+		.act {
+			display: block;
+			font-size: 2.5em;
+			color: white;
+			text-shadow: 2px 2px 3px grey;
+			
+		}
+		.act::after {
+			content: " ºC";
+		}
+		.min {
+			color: white;
+			margin-left: 25px;
+		}
+		.max {
+			color: green;
+		}
+		.min::after {
+			content: "ºC / "
+		}
+		.max::after {
+			content: "ºC "
+		}
+		.hum {
+			color: white;
+		}
+		.hum::before {
+			content: "Humedad: "
+		}
+		.hum::after {
+			content: "%"
+		}
+		.nubes::after {
+			content: "%";
+		}
+		.nubes::before {
+			content: "Nubes: ";
+		}
+		.nubes {
+			color: white;
+		}
+
+	.textoBuscar {
+		
+		height: 30px;
+	}
+
+	.add-btn {
+		width: 30px;
+		margin-left: -6px;
+		border-style: none;
+		background-color: white;
+		
+		
+		
+
+	}
+
+.btn {
+	background: #039BE5;
+	color: white;
+	border-radius: 2px;
+	height: 36px;
+}
+
+.search {
+	margin: 5px 5px 0 5px;
+
+}
+
+footer {
+	background-color: red;
+	text-align: center;
+	position: relative;
+}
